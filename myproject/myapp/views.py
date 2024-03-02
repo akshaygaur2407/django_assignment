@@ -6,6 +6,9 @@ import requests
 import pandas as pd
 
 def fetch_menu(restaurant_id):
+    """ 
+    This function fetches the menu data for a given restaurant ID from the Swiggy API.
+    """
     try:
         url = f"https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.56&lng=73.95&restaurantId={restaurant_id}"
         headers = {
@@ -20,6 +23,9 @@ def fetch_menu(restaurant_id):
         return None
 
 def extract_menu(menu_data):
+    """
+    This function extracts relevant menu details from the fetched menu data.
+    """
     try:
         data = menu_data.get('data')
         menu_items = [
@@ -43,6 +49,9 @@ def extract_menu(menu_data):
         return None
 
 def fetch_and_extract_menu(request):
+    """
+    This view function handles the request to fetch and extract menu data for a given restaurant ID.
+    """
     if request.method == 'GET':
         restaurant_id = request.GET.get('restaurant_id')
         if restaurant_id:
