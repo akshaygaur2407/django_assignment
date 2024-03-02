@@ -7,7 +7,7 @@ Clone the repository:
 
 
 ```python
-git clone https://github.com/your_username/your_project.git
+git clone https://github.com/your_username/django_assignment.git
 ```
 
 ## Install dependencies:
@@ -32,5 +32,5 @@ Access the application in your postman, here is the sample url:- http://127.0.0.
 To run the unit tests for the project:
 
 ```python
-python manage.py test your_app_name.test_views
+python manage.py test myapp.test_views
 ```
