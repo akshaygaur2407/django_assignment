@@ -1,6 +1,7 @@
-## Django Assignment
-Description
-Brief description of your project.
+## Description
+
+This is the assignment to extract the data feom swiggy API and return the relevant fields in the form of csv.
+Please use postman to send the resturant id and receive the csv data, here is a sample postman requestr:- http://127.0.0.1:8000/myapp/fetch_and_extract_menu/?restaurant_id=37968
 
 ## Installation
 Clone the repository:
