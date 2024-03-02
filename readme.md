@@ -12,9 +12,9 @@ git clone https://github.com/your_username/your_project.git
 
 ## Install dependencies:
 
-
+```python
 pip install -r requirements.txt
-
+```
 
 ## Navigate to the project directory:
 
